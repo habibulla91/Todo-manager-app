@@ -1,3 +1,6 @@
 import express from 'express';
+import { appRoutes } from './routes/appRoutes.js';
 
-export const app = express()
+export const app = express();
+
+app.use('/', appRoutes);
