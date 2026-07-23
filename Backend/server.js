@@ -9,10 +9,10 @@ const startServer = async () => {
         console.log(`Server is running on port ${port}`);
     });
 };
-
+startServer();
 async () => {
     try {
-        startServer();
+        
     } catch (error) {
         console.error(`connected failed ${error.message}`);
         throw error;
